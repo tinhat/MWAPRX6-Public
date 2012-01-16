@@ -1,0 +1,23 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "mwap16.png",
+      "popup": "MWAPRTS.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "exclude_globs": [ "http://mwfb.zynga.com/mwfb/*#*", "http://facebook.mafiawars.com/mwfb/*#*", "http://facebook.mafiawars.zynga.com/mwfb/*#*", "http://apps.facebook.com/inthemafia/sk_updater.php*", "http://facebook.mafiawars.com/mwfb/sk_updater.php*", "http://facebook.mafiawars.zynga.com/mwfb/sk_updater.php*", "http://apps.facebook.com/inthemafia/iframe_proxy.php*", "http://facebook.mafiawars.com/mwfb/iframe_proxy.php*", "http://facebook.mafiawars.zynga.com/mwfb/iframe_proxy.php*" ],
+      "js": [ "jquery-1.4.2.min.js", "mwplayer.user.js" ],
+      "matches": [ "http://apps.facebook.com/inthemafia/*", "http://apps.new.facebook.com/inthemafia/*", "http://mwfb.zynga.com/mwfb/remote/html_server.php*", "http://facebook.mafiawars.com/mwfb/remote/html_server.php*", "http://facebook.mafiawars.zynga.com/mwfb/remote/html_server.php*", "http://www.facebook.com/connect/uiserver*", "https://www.facebook.com/dialog/apprequests*", "https://www.facebook.com/dialog/feed*" ]
+   } ],
+   "description": "PS Facebook Mafia Wars Autoplayer (MWAP)",
+   "icons": {
+      "128": "mwap128.png",
+      "48": "mwap48.png"
+   },
+   "minimum_chrome_version": "4.0",
+   "name": "Autoplayer for Mafia Wars (Facebook)",
+   "permissions": [ "tabs", "http://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.0.38"
+}
